@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font: 14px/1.5 Arial;
+}
+
+.all > header div {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: color;
+}
+
+body > .all {
+    display: grid;
+    grid: auto auto / 1fr 800px 1fr;
+}
+
+header {
+    background: grey;
+    text-align: center;
+    grid-area: 1/1/2/4;
+}
+
+main {
+    grid-area: 2/2/3/3;
+    display: grid;
+    grid: auto / 1fr 3fr;
+}
+
+.column-1 {
+    grid-area: 1/1/2/2;
+}
+
+.column-2 {
+    grid-area: 1/2/2/3;
+}
+
+.map .detail dd {
+    height: 3px;
+    margin: 8px 0 16px 0;
+    border-radius: 3px;
+    background: #ccc;
+}
+.map .detail .bar {
+    display: block;
+    height: 3px;
+    background: #77a8a3;
+}
