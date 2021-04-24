@@ -33,6 +33,13 @@ body > .all {
         grid: auto auto /1fr 650px 1fr;
     }
 }
+
+@media (max-width: 650px){
+    body > .all {
+        grid: auto auto /10px 1fr 10px;
+    }
+}
+
 header {
     background: grey;
     text-align: center;
